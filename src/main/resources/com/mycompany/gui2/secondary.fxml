@@ -9,6 +9,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -20,19 +21,25 @@
   <tabs>
     <Tab text="Home">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+        <AnchorPane>
                <children>
                   <BorderPane prefHeight="442.0" prefWidth="753.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <right>
-                        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                          <columns>
-                            <TableColumn fx:id="rosterDisplay" prefWidth="199.0" text="Team Roster" />
-                          </columns>
-                        </TableView>
+                        <AnchorPane BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="118.0" fitWidth="218.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../java/Images/1500x500.jfif" />
+                                 </image>
+                              </ImageView>
+                              <TableView prefHeight="372.0" prefWidth="221.0">
+                                <columns>
+                                  <TableColumn fx:id="rosterDisplay" prefWidth="199.0" text="Team Roster" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
                      </right>
-                     <bottom>
-                        <ImageView fitHeight="76.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
-                     </bottom>
                   </BorderPane>
                </children></AnchorPane>
       </content>

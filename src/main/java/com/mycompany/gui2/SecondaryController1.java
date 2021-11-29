@@ -1,6 +1,10 @@
 package com.mycompany.gui2;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -45,6 +49,21 @@ public class SecondaryController1 {
     @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
+    }
+
+    @FXML
+    private void writeToTxt(ActionEvent event) throws IOException {
+        StringBuilder sb = new StringBuilder();
+        sb.append(createFirstName.getText().toString()+ "\n");
+        
+        File file =new File("C:\\Users\\dorje\\Desktop\\login.txt");
+        FileWriter W = new FileWriter(file);
+        Scanner S = new Scanner(file);
+        
+        W.write(sb.toString());
+        W.close();
+        
+        //Platform.exit();//closes window
     }
 
 

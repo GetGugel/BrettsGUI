@@ -124,7 +124,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button mnemonicParsing="false" text="Confirm " />
+                        <Button mnemonicParsing="false" onAction="#switchToSecondary" text="Confirm " />
                         <Label text="(By default, time slots are set to unavailable)" />
                      </children>
                   </VBox>
@@ -220,7 +220,7 @@
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="3.0" prefWidth="736.0">
                            <children>
-                                <Button fx:id="createAccountButton" onAction="#switchToSecondary" text="Sign up">
+                                <Button fx:id="createAccountButton" onAction="#writeToTxt" text="Sign up">
                                  <HBox.margin>
                                     <Insets bottom="20.0" />
                                  </HBox.margin>
