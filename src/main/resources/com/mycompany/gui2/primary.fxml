@@ -46,9 +46,10 @@
                         <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Login" />
                      </children>
                   </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
                      <children>
                         <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#switchToSignUp" text="Sign Up" />
+                        <Button fx:id="coachSignUp" mnemonicParsing="false" onAction="#switchToCoachSignIn" text="Coach Sign Up" />
                      </children>
                   </VBox>
                </children>

@@ -45,6 +45,14 @@ public class SecondaryController1 {
     private CheckBox signUpCheck7;
     @FXML
     private CheckBox signUpCheck8;
+    @FXML
+    private CheckBox signUpCheck9;
+    @FXML
+    private CheckBox signUpCheck10;
+    @FXML
+    private CheckBox signUpCheck11;
+    @FXML
+    private CheckBox signUpCheck12;
 
     @FXML
     private void switchToSecondary() throws IOException {

@@ -16,6 +16,8 @@ public class PrimaryController {
     private Button primaryButton;
     @FXML
     private Button signUpButton;
+    @FXML
+    private Button coachSignUp;
 
     @FXML
     private void switchToSecondary() throws IOException {
@@ -25,5 +27,10 @@ public class PrimaryController {
     @FXML
     private void switchToSignUp() throws IOException{
         App.setRoot("signIn");
+    }
+
+    @FXML
+    private void switchToCoachSignIn() throws IOException{
+        App.setRoot("coachSign");
     }
 }
